@@ -31,28 +31,7 @@ const HeroSection = () => {
 
   return (
     <section className="relative overflow-hidden bg-white">
-      {/* Dynamic Text Overlay */}
-      <div className="absolute inset-0 z-10 pointer-events-none flex items-center">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-md p-6 sm:p-8 md:p-10 rounded-[32px] border border-white/20 shadow-xl pointer-events-auto mt-16 lg:mt-0">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-[#3f3f3f] leading-[1.15]">
-              {settings.hero_heading || "Empowering Women Through Handmade Businesses"}
-            </h1>
-            <p className="mt-4 text-xs sm:text-base text-[#6b7280] leading-7">
-              {settings.hero_subheading || "Supporting local women entrepreneurs through digital commerce."}
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Link to="/products" className="px-5 py-3 rounded-full bg-[#5A97A9] text-white text-xs sm:text-sm font-medium hover:bg-[#4c8798] transition-all duration-300">
-                Shop Collection
-              </Link>
-              <Link to="/about" className="px-5 py-3 rounded-full bg-white text-[#3f3f3f] border border-[#d7e3e7] text-xs sm:text-sm font-medium hover:bg-gray-50 transition-all duration-300">
-                Our Mission
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    
       <Swiper
         modules={[Autoplay, Pagination]}
         slidesPerView={1}
