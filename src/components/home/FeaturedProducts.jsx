@@ -85,19 +85,17 @@ const FeaturedProducts = () => {
             </span>
 
             <h2 className="mt-5 text-[28px] sm:text-[38px] leading-[1.15] font-semibold tracking-tight text-[#3f3f3f]">
-              Handmade Products
-              <br />
-              Crafted With Care
+              Featured Handmade Products
             </h2>
 
-            <p className="mt-5 text-[15px] leading-7 text-[#6b7280] max-w-xl">
-              Every product is
-              thoughtfully handmade
-              by local women,
-              supporting creativity,
-              independence, and
-              sustainable income.
-            </p>
+            <div className="mt-5 text-[15px] leading-7 text-[#6b7280] max-w-xl space-y-3">
+              <p>
+                Explore handcrafted products made with care, creativity, and purpose by women building their own livelihoods through Aamdani.
+              </p>
+              <p>
+                Each product reflects skill, dedication, and a journey toward financial independence.
+              </p>
+            </div>
 
           </motion.div>
 
@@ -123,7 +121,7 @@ const FeaturedProducts = () => {
               to="/products"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#fff1e7] text-[#FF7A1A] text-sm font-medium hover:gap-3 transition-all duration-300"
             >
-              View All Products
+              Shop All Products
 
               <svg
                 width="14"

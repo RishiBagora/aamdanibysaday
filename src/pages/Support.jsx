@@ -1,10 +1,8 @@
 import React from 'react'
 import SupportHero from '../components/support/SupportHero'
-import WaysToSupport from '../components/support/WaysToSupport'
-import VolunteerSection from '../components/support/VolunteerSection'
-import PartnerWithUs from '../components/support/PartnerWithUs'
+import ContactGrid from '../components/support/ContactGrid'
+import CollaborateSection from '../components/support/CollaborateSection'
 import SupportFAQ from '../components/support/SupportFAQ'
-import SupportCTA from '../components/support/SupportCTA'
 import SEO from '../components/common/SEO'
 import { useSettings } from '../context/SettingsContext'
 
@@ -14,16 +12,14 @@ const Collaborate = () => {
   return (
     <div>
       <SEO
-        title={settings.support_page_title || "Support Women Entrepreneurs"}
-        description={settings.support_page_description || ""}
+        title="Connect With Aamdani"
+        description="We welcome collaborations, partnerships, product enquiries, and support opportunities."
       />
       <SupportHero/>
-      <WaysToSupport/>
-      <VolunteerSection/>
-      <PartnerWithUs/>
+      <ContactGrid/>
+      <CollaborateSection/>
       <SupportFAQ/>
-      <SupportCTA/>
-          </div>
+    </div>
   )
 }
 

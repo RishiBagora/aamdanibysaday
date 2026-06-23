@@ -53,7 +53,7 @@ Please share payment details.`;
     const whatsappNumber =
       cartItems[0]?.whatsappNumber ||
       settings.whatsapp_number ||
-      "919876543210";
+      "919643424286";
 
     window.open(
       `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(

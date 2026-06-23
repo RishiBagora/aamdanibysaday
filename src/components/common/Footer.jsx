@@ -15,14 +15,14 @@ const footerText =
 
 const supportEmail =
   settings.support_email ||
-  "hello@aamdani.org";
+  "projectaamdani@gmail.com";
 
 const phone =
   settings.phone ||
-  "+919999999999";
+  "+91 96434 24286";
 
 const instagram =
-  settings.instagram || "#";
+  settings.instagram || "https://www.instagram.com/aamdani_by_saday?igsh=Z253dzczdG54MmY1";
 
 const facebook =
   settings.facebook || "#";

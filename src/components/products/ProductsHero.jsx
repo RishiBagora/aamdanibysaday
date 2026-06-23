@@ -22,14 +22,12 @@ const ProductsHero = ({ totalProducts = 0 }) => {
 
           {/* HEADING */}
           <h1 className="mt-5 text-[34px] sm:text-[48px] lg:text-[58px] leading-[1.05] font-semibold tracking-tight text-[#3f3f3f]">
-            {settings.products_page_title || "Handmade Products"}
+            {settings.products_page_title || "Shop Handmade Products With Purpose"}
           </h1>
 
           {/* DESCRIPTION */}
           <p className="mt-5 text-[15px] sm:text-base leading-7 text-[#6b7280] max-w-2xl">
-            {settings.products_page_description || `Discover handcrafted products created by talented women artisans.
-            Every purchase supports livelihoods, creativity, and sustainable
-            opportunities within local communities.`}
+            {settings.products_page_description || `Every product available here is handcrafted by women building their own livelihoods through Aamdani. Your purchase directly supports income generation, confidence, and sustainable livelihood opportunities.`}
           </p>
 
           {/* STATS */}

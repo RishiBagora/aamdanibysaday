@@ -13,64 +13,48 @@ const CTASection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="rounded-[32px] border border-[#d7e3e7] bg-white p-7 sm:p-10 lg:p-12"
+          className="rounded-[32px] border border-[#d7e3e7] bg-white p-7 sm:p-10 lg:p-12 shadow-sm"
         >
 
-          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10">
 
             {/* LEFT */}
             <div className="max-w-2xl">
 
               {/* LABEL */}
               <span className="inline-flex items-center rounded-full bg-[#e8f1f4] px-4 py-2 text-xs font-medium tracking-wide text-[#5A97A9] uppercase">
-                Aamdani Initiative
+                Aamdani Livelihood
               </span>
 
               {/* HEADING */}
-              <h2 className="mt-5 text-[28px] sm:text-[38px] leading-[1.15] font-semibold tracking-tight text-[#3f3f3f]">
-                Supporting Women Through
-                <br />
-                Handmade Businesses &
-                <br />
-                Meaningful Opportunities
+              <h2 className="mt-5 text-[26px] sm:text-[36px] leading-[1.2] font-semibold tracking-tight text-[#3f3f3f]">
+                Your Purchase Can Help Build Someone’s Independence
               </h2>
 
-              {/* SMALL TAGS */}
-              <div className="flex flex-wrap gap-3 mt-7">
-
-                <div className="px-4 py-2 rounded-full bg-[#e8f1f4] text-[#5A97A9] text-sm font-medium">
-                  Women Empowerment
-                </div>
-
-                <div className="px-4 py-2 rounded-full bg-[#fff1e7] text-[#FF7A1A] text-sm font-medium">
-                  Handmade Products
-                </div>
-
-                <div className="px-4 py-2 rounded-full bg-[#eef3ee] text-[#6c8c74] text-sm font-medium">
-                  Sustainable Growth
-                </div>
-
-              </div>
+              {/* SUBHEADLINE */}
+              <p className="mt-4 text-sm sm:text-base text-[#6b7280] leading-6 sm:leading-7">
+                Support handmade products that create real livelihood opportunities for women.
+              </p>
 
             </div>
 
             {/* RIGHT */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 shrink-0">
 
               {/* PRIMARY BUTTON */}
               <Link
                 to="/products"
-                className="px-6 py-3.5 rounded-full bg-[#5A97A9] text-white text-sm font-medium hover:bg-[#4c8798] transition-all duration-300 text-center"
+                className="px-6 py-3.5 rounded-full bg-[#5A97A9] text-white text-sm font-semibold hover:bg-[#4c8798] transition-all duration-300 text-center shadow-md hover:shadow-lg"
               >
-                Explore Products
+                Shop Now
               </Link>
 
               {/* SECONDARY BUTTON */}
               <Link
-                to="/support"
-                className="px-6 py-3.5 rounded-full bg-[#fff1e7] text-[#FF7A1A] text-sm font-medium hover:bg-[#ffe7d3] transition-all duration-300 text-center"
+                to="/contact"
+                className="px-6 py-3.5 rounded-full bg-[#fff1e7] text-[#FF7A1A] text-sm font-semibold hover:bg-[#ffe7d3] transition-all duration-300 text-center shadow-sm"
               >
-                Support Initiative
+                Collaborate With Us
               </Link>
 
             </div>

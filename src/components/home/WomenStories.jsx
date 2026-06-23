@@ -72,9 +72,7 @@ const WomenStories = () => {
 
             {/* HEADING */}
             <h2 className="mt-5 text-[28px] sm:text-[38px] leading-[1.15] font-semibold tracking-tight text-[#3f3f3f]">
-              Stories Of Strength,
-              <br />
-              Passion & Independence
+              Faces Behind The Products
             </h2>
 
           </motion.div>
@@ -87,8 +85,7 @@ const WomenStories = () => {
             viewport={{ once: true }}
             className="text-[15px] leading-7 text-[#6b7280] max-w-lg"
           >
-            Every product represents the dedication and creativity of women
-            building sustainable livelihoods through handmade work.
+            Behind every handmade product is a story of resilience, growth, and hope. These are the women whose skills are transforming into opportunities, confidence, and sustainable livelihoods.
           </motion.p>
 
         </div>

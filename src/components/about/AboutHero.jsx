@@ -4,26 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useSettings } from "../../context/SettingsContext";
 
-const stats = [
-  {
-    value: "120+",
-    label: "Women Supported",
-    bg: "bg-[#e8f1f4]",
-    text: "text-[#5A97A9]",
-  },
-  {
-    value: "350+",
-    label: "Products Created",
-    bg: "bg-[#fff1e7]",
-    text: "text-[#FF7A1A]",
-  },
-  {
-    value: "15+",
-    label: "Communities",
-    bg: "bg-[#eef3ee]",
-    text: "text-[#6c8c74]",
-  },
-];
+
 
 const AboutHero = () => {
   const { settings } = useSettings();
@@ -102,34 +83,7 @@ const AboutHero = () => {
 
         </motion.div>
 
-        {/* STATS */}
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.25 }}
-          className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6"
-        >
-
-          {stats.map((item, index) => (
-            <div
-              key={index}
-              className={`${item.bg} rounded-[24px] p-6 text-center`}
-            >
-
-              <h3
-                className={`text-3xl font-semibold tracking-tight ${item.text}`}
-              >
-                {item.value}
-              </h3>
-
-              <p className="mt-2 text-sm text-[#5f6971]">
-                {item.label}
-              </p>
-
-            </div>
-          ))}
-
-        </motion.div>
+        
 
       </div>
     </section>

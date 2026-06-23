@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import Support from "./pages/Support";
-import Impact from "./pages/Impact";
+
 import Contact from "./pages/Contact";
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
@@ -54,7 +54,7 @@ function App() {
                 element={<ProductDetails />}
               />
               <Route path="/support" element={<Support />} />
-              <Route path="/impact" element={<Impact />} />
+              
               <Route path="/contact" element={<Contact />} />
             </Routes>
 

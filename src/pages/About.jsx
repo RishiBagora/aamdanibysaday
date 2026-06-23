@@ -1,14 +1,14 @@
-import React from 'react'
-import AboutHero from '../components/about/AboutHero'
-import OurStory from '../components/about/OurStory'
-import MissionVision from '../components/about/MissionVission'
-import HowItWorks from '../components/about/HowItWorks'
-import ImpactThroughWork from '../components/about/ImpactThroughWork'
-import MeetWomen from '../components/about/WomenWeSupoort'
-import JoinMovement from '../components/about/JoinMovement'
-import FaqSection from '../components/about/FaqSection'
-import SEO from '../components/common/SEO'
-import { useSettings } from '../context/SettingsContext'
+import React from 'react';
+import AboutHero from '../components/about/AboutHero';
+import OurStory from '../components/about/OurStory';
+import WhyNeeded from '../components/about/WhyNeeded';
+import WhatWeDo from '../components/about/WhatWeDo';
+import BeyondFinancialImpact from '../components/about/BeyondFinancialImpact';
+import MissionVision from '../components/about/MissionVision';
+import GetInvolved from '../components/about/GetInvolved';
+import FaqSection from '../components/about/FaqSection';
+import SEO from '../components/common/SEO';
+import { useSettings } from '../context/SettingsContext';
 
 const About = () => {
   const { settings } = useSettings();
@@ -20,15 +20,15 @@ const About = () => {
         description={settings.about_page_description || ""}
       />
       <AboutHero />
-      <OurStory/>
-      <MissionVision/>
-      <HowItWorks/>
-      <ImpactThroughWork/>
-      <MeetWomen/>
-      <JoinMovement/>
-      <FaqSection/>
+      <OurStory />
+      <WhyNeeded />
+      <WhatWeDo />
+      <BeyondFinancialImpact />
+      <MissionVision />
+      <GetInvolved />
+      <FaqSection />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

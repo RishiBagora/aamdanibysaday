@@ -1,0 +1,48 @@
+// src/data/stats.js
+
+export const stats = [
+  {
+    key: "women",
+    value: 120,
+    suffix: "+",
+    label: "Women Supported",
+    title: "Women Supported",
+    description: "Women connected with opportunities through Aamdani.",
+    bg: "bg-[#e8f1f4]",
+    text: "text-[#5A97A9]",
+    color: "text-[#5A97A9]",
+  },
+  {
+    key: "products",
+    value: 350,
+    suffix: "+",
+    label: "Products Created",
+    title: "Products Listed",
+    description: "Handmade products showcased through the platform.",
+    bg: "bg-[#fff1e7]",
+    text: "text-[#FF7A1A]",
+    color: "text-[#FF7A1A]",
+  },
+  {
+    key: "communities",
+    value: 15,
+    suffix: "+",
+    label: "Local Communities",
+    title: "Communities",
+    description: "Communities reached through local partnerships.",
+    bg: "bg-[#eef3ee]",
+    text: "text-[#6c8c74]",
+    color: "text-[#6c8c74]",
+  },
+  {
+    key: "supporters",
+    value: 500,
+    suffix: "+",
+    label: "Happy Supporters",
+    title: "Supporters",
+    description: "People supporting women-led businesses and initiatives.",
+    bg: "bg-[#f1eef8]",
+    text: "text-[#7c68b2]",
+    color: "text-[#7c68b2]",
+  },
+];

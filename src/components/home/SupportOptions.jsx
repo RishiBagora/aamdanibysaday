@@ -5,34 +5,42 @@ import { Link } from "react-router-dom";
 
 const supportItems = [
   {
-    title: "Buy Products",
+    title: "Purchasing handmade products",
     description:
-      "Support women-led homemade businesses through meaningful purchases.",
+      "Support local women-led businesses through your purchases of handmade goods.",
     link: "/products",
     color: "bg-[#e8f1f4] text-[#5A97A9]",
     hover: "group-hover:bg-[#5A97A9]",
   },
   {
-    title: "Volunteer",
+    title: "Supporting livelihood opportunities",
     description:
-      "Contribute your time, skills, or ideas to support local communities.",
+      "Help fund vocational training sessions, raw materials, and livelihood tools.",
     link: "/support",
     color: "bg-[#fff1e7] text-[#FF7A1A]",
     hover: "group-hover:bg-[#FF7A1A]",
   },
   {
-    title: "Partner With Us",
+    title: "Collaborating for bulk or corporate orders",
     description:
-      "Collaborate with Aamdani to create sustainable opportunities for women.",
-    link: "/support",
+      "Partner with us for corporate gifting, college collaborations, events, or custom co-branded items.",
+    link: "/contact",
     color: "bg-[#eef3ee] text-[#6c8c74]",
     hover: "group-hover:bg-[#6c8c74]",
+  },
+  {
+    title: "Volunteering or partnering with us",
+    description:
+      "Contribute your time, skills, design mentorship, or organizational partnerships.",
+    link: "/support",
+    color: "bg-[#f1eef8] text-[#7c68b2]",
+    hover: "group-hover:bg-[#7c68b2]",
   },
 ];
 
 const SupportOptions = () => {
   return (
-    <section className="py-14 md:py-16 bg-[#fcfcfc]">
+    <section className="py-14 md:py-16 bg-[#fcfcfc] border-t border-[#d7e3e7]/40">
       <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* TOP */}
@@ -43,70 +51,44 @@ const SupportOptions = () => {
           viewport={{ once: true }}
           className="max-w-2xl"
         >
-
           {/* LABEL */}
-          <span className="inline-flex items-center rounded-full bg-[#e8f1f4] px-4 py-2 text-xs font-medium tracking-wide text-[#5A97A9] uppercase">
-            Support Aamdani
+          <span className="inline-flex items-center rounded-full bg-[#fff1e7] px-4 py-2 text-xs font-medium tracking-wide text-[#FF7A1A] uppercase">
+            Get Involved
           </span>
 
           {/* HEADING */}
           <h2 className="mt-5 text-[28px] sm:text-[38px] leading-[1.15] font-semibold tracking-tight text-[#3f3f3f]">
-            Simple Ways To
-            <br />
-            Support The Initiative
+            How You Can Support
           </h2>
 
           {/* DESCRIPTION */}
           <p className="mt-5 text-[15px] leading-7 text-[#6b7280]">
-            Every contribution helps women grow independently through handmade
-            businesses, local skills, and sustainable opportunities.
+            You can become part of this journey by supporting livelihood opportunities, volunteering, or buying handmade products. Every contribution helps create meaningful and lasting impact.
           </p>
-
         </motion.div>
-
-        {/* SMALL TAGS */}
-        <div className="flex flex-wrap gap-3 mt-8">
-
-          <div className="px-4 py-2 rounded-full bg-[#e8f1f4] text-[#5A97A9] text-sm font-medium">
-            Support Women
-          </div>
-
-          <div className="px-4 py-2 rounded-full bg-[#fff1e7] text-[#FF7A1A] text-sm font-medium">
-            Volunteer
-          </div>
-
-          <div className="px-4 py-2 rounded-full bg-[#eef3ee] text-[#6c8c74] text-sm font-medium">
-            Community Growth
-          </div>
-
-        </div>
 
         {/* LIST */}
         <div className="mt-10 border-t border-[#d7e3e7]">
-
           {supportItems.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 35 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.6,
                 delay: index * 0.08,
               }}
               viewport={{ once: true }}
               className="group"
             >
-
               <Link
                 to={item.link}
                 className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 py-7 border-b border-[#d7e3e7]"
               >
-
                 {/* LEFT */}
-                <div className="max-w-xl">
-
+                <div className="max-w-2xl">
                   <div
-                    className={`inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium mb-4 ${item.color}`}
+                    className={`inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium mb-3 ${item.color}`}
                   >
                     {item.title}
                   </div>
@@ -114,14 +96,12 @@ const SupportOptions = () => {
                   <p className="text-[15px] leading-7 text-[#6b7280]">
                     {item.description}
                   </p>
-
                 </div>
 
                 {/* RIGHT ICON */}
                 <div
                   className={`w-11 h-11 rounded-full border border-[#d7e3e7] flex items-center justify-center shrink-0 transition-all duration-300 ${item.hover}`}
                 >
-
                   <svg
                     width="16"
                     height="16"
@@ -142,14 +122,10 @@ const SupportOptions = () => {
                       strokeLinecap="round"
                     />
                   </svg>
-
                 </div>
-
               </Link>
-
             </motion.div>
           ))}
-
         </div>
 
       </div>

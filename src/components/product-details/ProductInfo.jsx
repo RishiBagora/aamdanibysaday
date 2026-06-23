@@ -64,7 +64,7 @@ Quantity: ${qty}
 
 Please share payment details.`;
 
-    const whatsappUrl = `https://wa.me/${product.whatsappNumber || settings.whatsapp_number || "919999999999"}?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/${product.whatsappNumber || settings.whatsapp_number || "919643424286"}?text=${encodeURIComponent(
       message
     )}`;
 
@@ -118,6 +118,24 @@ Please share payment details.`;
       <p className="mt-6 text-[15px] leading-7 text-[#6b7280]">
         {product.shortDescription}
       </p>
+
+      {/* IMPACT NOTE */}
+      <div className="mt-6 p-4 sm:p-5 rounded-[22px] bg-[#e8f1f4] border border-[#d7e3e7] flex gap-3.5 items-start shadow-sm">
+        <span className="text-xl shrink-0 select-none mt-0.5">✨</span>
+        <p className="text-[13.5px] leading-6 text-[#5A97A9] font-semibold">
+          This product is handmade by women building sustainable livelihood opportunities through Aamdani. Every purchase directly contributes toward income generation and financial independence.
+        </p>
+      </div>
+
+      {/* OPTIONS / VARIANTS */}
+      <div className="mt-6">
+        <p className="text-sm font-semibold text-[#3f3f3f] mb-3">
+          Option
+        </p>
+        <div className="inline-flex items-center px-4 py-2 border border-[#d7e3e7] rounded-full bg-[#f5f7f8] text-[#4a4a4a] text-xs font-semibold uppercase">
+          Standard (One of a kind, Handmade)
+        </div>
+      </div>
 
       {/* QUANTITY */}
       <div className="mt-8">

@@ -8,11 +8,11 @@ const ContactSection = () => {
 
 const supportEmail =
   settings.support_email ||
-  "hello@aamdani.org";
+  "projectaamdani@gmail.com";
 
 const phone =
   settings.phone ||
-  "+919999999999";
+  "+91 96434 24286";
 
 const address =
   settings.address ||
