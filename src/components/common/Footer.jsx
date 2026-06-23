@@ -22,7 +22,7 @@ const phone =
   "+91 96434 24286";
 
 const instagram =
-  settings.instagram || "https://www.instagram.com/aamdani_by_saday?igsh=Z253dzczdG54MmY1";
+  settings.instagram || "https://www.instagram.com/aamdanibysaday";
 
 const facebook =
   settings.facebook || "#";
